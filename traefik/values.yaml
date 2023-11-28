@@ -33,7 +33,7 @@ providers:
     allowExternalNameServices: true
   kubernetesIngress:
     enabled: true
-    allowExternalNameServices: true
+    
     publishedService:
       enabled: false
 
