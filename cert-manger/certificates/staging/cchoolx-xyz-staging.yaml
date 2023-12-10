@@ -9,7 +9,7 @@ spec:
   issuerRef:
     name: letsencrypt-staging
     kind: ClusterIssuer
-  #commonName: "*.cchoolx.xyz"
+  #commonName: "*.localhost"
   dnsNames:
-  - "mail.cchoolx.xyz"
-  - "*.cchoolx.xyz"
+  - "*e.localhost"
+  - "*.localhost"
