@@ -1,0 +1,15 @@
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: cchoolx-stag 
+  namespace: default
+spec:
+  secretName: s-tls
+  issuerRef:
+    name: letsencrypt-staging
+    kind: ClusterIssuer
+  #commonName: "*.cchoolx.xyz"
+  dnsNames:
+  - "mail.cchoolx.xyz"
+  - "*.cchoolx.xyz"
