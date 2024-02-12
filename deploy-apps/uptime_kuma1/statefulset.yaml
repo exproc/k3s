@@ -4,7 +4,7 @@ metadata:
   name: uptime-kuma
   namespace: kuma
 spec:
-  replicas: 3
+  replicas: 1
   serviceName: uptime-kuma-service
   selector:
     matchLabels:
