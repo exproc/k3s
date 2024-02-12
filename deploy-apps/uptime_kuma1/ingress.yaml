@@ -4,7 +4,7 @@ metadata:
   name: kuma
   namespace: kuma
   annotations:
-    kubernetes.io/ingress.class: "traefik" 
+    kubernetes.io/ingress.class: traefik-external 
     #nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
    #cert-manager.io/cluster-issuer: "letsencrypt-staging"
 spec:
