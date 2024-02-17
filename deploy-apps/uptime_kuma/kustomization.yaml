@@ -10,7 +10,7 @@ resources:
 - kuma-service.yaml
 
 # Persistent Volume Claim
-- kuma-pvc.yaml
+#- kuma-pvc.yaml
 
 # Deployments
 - kuma-statefulset.yaml
