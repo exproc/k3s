@@ -1,9 +1,11 @@
-  volumeClaimTemplates:
-    - metadata:
-        name: kuma-data
-      spec:
-        accessModes: ["ReadWriteOnce"]
-        volumeMode: Filesystem
-        resources:
-          requests:
-            storage: 1Gi
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: kuma-data
+  namespace: kuma
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
