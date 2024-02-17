@@ -1,0 +1,16 @@
+resources:
+
+# namespace
+- kuma-namespace.yaml
+
+# Ingress
+- kuma-ingress.yaml
+ 
+# Services
+- kuma-service.yaml
+
+# Persistent Volume Claim
+- kuma-pvc.yaml
+
+# Deployments
+- kuma-statefulset.yaml
