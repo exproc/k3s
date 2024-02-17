@@ -2,14 +2,13 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: cchoolx-stag 
+  name: cchoolx-xyz
   namespace: default
 spec:
-  secretName: p-tls
+  secretName: pro-tls
   issuerRef:
     name: letsencrypt-staging
     kind: ClusterIssuer
-  #commonName: "*.localhost"
+  #commonName: "cchoolx.xyz"
   dnsNames:
-  - "*e.localhost"
-  - "*.localhost"
+    - "*.cchoolx.xyz"
