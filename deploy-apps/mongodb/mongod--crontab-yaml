@@ -2,7 +2,7 @@ apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
   name: mongodb-backup
-  namespace-network
+  namespace: network
 spec:
   schedule: "*/1 * * * *"
   jobTemplate:
