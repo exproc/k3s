@@ -22,6 +22,9 @@ spec:
         - secretRef:
             name: mongodb-secret
         volumeMounts:
+        - name: mongodb-configuration-file
+          mountPath: /etc/mongod.conf
+          readOnly: true
         - name: mongodb-persistent-storage
           mountPath: /data/db
       volumes:
