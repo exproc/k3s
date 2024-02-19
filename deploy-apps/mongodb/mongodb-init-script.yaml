@@ -4,6 +4,8 @@ metadata:
   name: mongodb-init-script
 data:
   init-script.js: |-
+    db = db.getSiblingDB('unifi');
+
     db.createUser({
       user: "unifi",      
       pwd: "unifi",   
