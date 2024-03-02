@@ -5,7 +5,7 @@ metadata:
   namespace: network
 spec:
   selector:
-    app: mongodb
+    app: mongodb-svc
   ports:
   - protocol: TCP
     port: 27017
